@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2Higher Order Functions</title>
+  </head>
+  <body>
+    <script>
+     
+      //Higher Order function - A function that takes in another function as its peramiter
+      function repeater(fn) {
+        fn();
+        fn();
+        fn();
+      }
+
+      function sayHello() {
+        console.log("Hello There!");
+      }
+
+      repeater(sayHello);
+    </script>
+  </body>
+</html>
